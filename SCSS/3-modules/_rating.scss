@@ -1,0 +1,47 @@
+// RATING white star
+
+.rating {
+  &.white{
+    display: block;
+    width: 21px;
+    height: 140px;
+  // white stars ratings
+    .star {
+      width: 21px;
+      height: 20px;
+      background: url('/images/icons/white-star.png') top center;
+      margin-bottom: 10px;
+    }
+
+    .empty-star {
+      width: 21px;
+      height: 20px;
+      margin-bottom: 10px;
+      background: url('/images/icons/empty-white-star.png') top center;
+    }
+  }
+
+// gold stars ratings
+  &.gold {
+    display: block;
+    width: 120px;
+    height: 16px;
+
+    .star {
+      display: block;
+      float: left;
+      width: 14px;
+      height: 14px;
+      margin-right: 8px;
+      background: url('/images/icons/gold-star.png') top center;
+    }
+
+    .empty-star {
+      float: left;
+      width: 14px;
+      height: 14px;
+      margin-right: 8px;
+      background: url('/images/icons/black-star.png') top center;
+    }
+  }
+}

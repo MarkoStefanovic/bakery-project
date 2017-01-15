@@ -1,0 +1,177 @@
+// food widget
+
+.food-widget{
+  position: relative;
+  padding-top: 50px;
+  @include media('>=md'){
+    width: 965px;
+  }
+  @include media('>=lg'){
+    padding-top: 0;
+    box-shadow: 0px 25px 54px 0px rgba(105, 80, 58, 0.45);
+  }
+
+  .rating{
+    &.white{
+    @include media('<sm'){
+      margin: 0 auto;
+    }
+    @include media('>=md'){
+      position: absolute;
+      display: block;
+      top: 186px;
+      left: 30px;
+    }
+  }
+
+    &.gold{
+      position: absolute;
+
+      @include media('<=sm'){
+        top: 10px;
+        left: 50%;
+        margin-left: -60px;
+      }
+      @include media('>=md'){
+        left: 20px;
+        bottom: 175px;
+      }
+      @include media('>=lg'){
+        left: 63px;
+      }
+    }
+  }
+
+  .left{
+    height: 143px;
+    background: $white;
+    @include media('>=md'){
+      width: 419px;
+      background: transparent;
+    }
+
+    img{
+      max-width: 100%;
+      display:block;
+      height: auto;
+      @include media('<sm'){
+        margin: 0 auto;
+      }
+      @include media('>=md'){
+        max-width: 100%;
+      }
+    }
+  }
+
+  .left{
+    @include media('>=md'){
+      float: left;
+    }
+  }
+
+  .right{
+    @include media('>=md'){
+      float: right;
+    }
+  }
+
+  .right{
+    padding: 10px 10px 0 10px;
+    position: relative;
+    background: $white url('/images/icons/windmill.png') bottom right no-repeat;
+    @include media('>=sm'){
+      height: 400px;
+      padding: 10px 20px 0 20px;
+    }
+    @include media('>=md'){
+      width: 546px;
+      height: 512px;
+      padding-top: 67px;
+      width: 546px;
+      box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+    @include media('>=lg'){
+      padding-right: 57px;
+      padding-left: 63px;
+    }
+
+    h2{
+      margin-bottom: 14px;
+    }
+
+    .widget-text{
+      font-weight: normal;
+      margin-top: 53px;
+      letter-spacing: 0.1em;
+      line-height: 24px;
+    }
+
+    .time-box{
+      @include media('>=sm'){
+        position: absolute;
+        top: -143px;
+        right: 0;
+      }
+      @include media('>=md'){
+        top: 0;
+      }
+      @include media('>=lg'){
+        top: -43px;
+        right: -105px;
+      }
+    }
+
+    .controls{
+      position: absolute;
+      bottom: 41px;
+      width: 423px;
+      height: 90px;
+      left: 50%;
+      margin-left: -210px;
+
+      .preview{
+        float: left;
+
+        img{
+          margin-left: 15px;
+          margin-right: 10px;
+          opacity: 0.5;
+
+          &.current{
+            opacity: 1;
+          }
+        }
+      }
+
+      .left-arrow,.right-arrow{
+        float: left;
+        cursor: pointer;
+        margin-top: 30px;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border-radius: 100%;
+        border: 2px $arrow solid;
+        &:hover,&:focus{
+          color: $fuscous-gray;
+        }
+        &:active{
+          color: $calico;
+        }
+        .fa{
+          line-height: 28px;
+          padding-left: 9px;
+          color: $arrow;
+        }
+      }
+      .left-arrow{
+        .fa{
+          padding-left: 7px;
+        }
+      }
+      .right-arrow{
+        margin-left: 10px;
+      }
+    }
+  }
+}

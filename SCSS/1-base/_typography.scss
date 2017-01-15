@@ -1,0 +1,55 @@
+// TYPOGRAPHY
+
+h1, .jumbotron .h1{
+  font-family: $playfair;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  color: $white;
+  @include media('>=lg'){
+    font-size: 92px;
+    line-height: 24px;
+  }
+}
+
+h2{
+  font-family: $alegreya;
+  font-weight: bold;
+  color: $fuscous-gray;
+  letter-spacing: 0.22em;
+  @include media('>=lg'){
+    font-size: 48px;
+    letter-spacing: 0.025em;
+    line-height: 24px;
+  }
+}
+
+h3{
+  font-family: $alegreya;
+  font-weight: bold;
+  color: $fuscous-gray;
+  @include media('>=lg'){
+    font-size: 24px;
+    letter-spacing: 0.025em;
+    line-height: 30px
+  }
+}
+
+
+p{
+  font-family: $montserrat;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  color: $fuscous-gray;
+}
+
+.underheading{
+  font-family: $alegreya;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: $barley-corn;
+  @include media('>=lg'){
+    letter-spacing: 0.09em;
+  }
+}

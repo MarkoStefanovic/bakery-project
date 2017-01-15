@@ -1,0 +1,92 @@
+// footer
+
+.footer {
+  padding-top: 58px;
+  background: $spring-wood;
+  text-align: center;
+
+  .footer-block {
+    .brand {
+      font-family: $scriptina;
+      font-size: 30px;
+      letter-spacing: 0.3em;
+      line-height: 24px;
+      color: $fuscous-gray;
+
+      @include media ('>=md') {
+        margin: 24px 50px 0;
+      }
+
+      @include media ('>=lg') {
+        margin-left: 45px;
+      }
+    }
+
+    .footer-nav {
+      border-top: 1px solid $footer-border;
+      border-bottom: 1px solid $footer-border;
+
+      li {
+        position: relative;
+
+        @include media ('>=md') {
+          display: inline;
+          margin-left: 30px;
+
+          &:nth-child(1) {
+            margin-left: 0;
+          }
+        }
+
+        @include media ('>=lg') {
+          margin-left: 78px;
+
+          &:nth-child(3) {
+            margin-right: 35px;
+          }
+
+          &:nth-child(1) {
+            margin-left: 0;
+          }
+
+          &.sign {
+            &::after {
+              content: '~';
+              display: block;
+              position: absolute;
+              top: 0;
+              color: $fuscous-gray;
+              left: -48px;
+            }
+          }
+        }
+
+        a {
+          display: inline-block;
+          font-family: $alegreya;
+          font-weight: normal;
+          font-size: 14px;
+          letter-spacing: 0.3em;
+          line-height: 24px;
+          color: $fuscous-gray;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding-top: 23px;
+          padding-bottom: 23px;
+          @include media ('>=md','<lg') {
+            letter-spacing: 0.01em;
+          }
+
+          &:focus,
+          &:hover {
+            color: $calico;
+          }
+
+          &:active {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

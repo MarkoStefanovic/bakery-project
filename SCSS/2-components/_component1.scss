@@ -1,0 +1,236 @@
+// ART of cakes
+
+.component1{
+  text-align: center;
+  margin-top: 10px;
+  background: $white;
+  padding-bottom: 1px;
+  @include media('>=sm'){
+    background: url('/images/images/artofcakes.jpg') top center;
+    background-size: cover;
+  }
+
+  &::before{
+    content: '';
+    background: url('/images/icons/border.png') top center;
+    display: block;
+    position: relative;
+    width: 106px;
+    height: 106px;
+    margin: 0 auto;
+    top: -59px;
+  }
+
+  .container{
+    margin-top: -24px;
+    margin-bottom: 50px;
+    @include media('>=lg'){
+      margin-bottom: 110px;
+    }
+  }
+
+  h2{
+    margin-top: 0;
+    margin-bottom: 14px;
+    @include media('>=sm'){
+      margin-top: 20px;
+    }
+  }
+
+  h3{
+    margin-top: 34px;
+    margin-bottom: 50px;
+    @include media('>=lg'){
+      margin-bottom: 0;
+    }
+  }
+
+  p{
+    margin-top: 30px;
+    @include media('>=lg'){
+      margin-top: 52px;
+      line-height: 24px;
+      padding: 0 45px;
+    }
+  }
+
+  .name{
+    margin: 0 auto;
+    width: 260px;
+    @include media('>=sm'){
+      width: 372px;
+    }
+    @include media('>=lg'){
+      margin-top: 28px;
+    }
+
+    img{
+      float: left;
+      margin: -36px 0 0 0;
+      @include media('>=sm'){
+        margin: 15px 25px 0 25px;
+      }
+    }
+
+    span{
+      text-align: center;
+      font-family: $alegreya;
+      font-weight: normal;
+      position: relative;
+      float: left;
+      color: $barley-corn;
+      text-transform: capitalize;
+      width: 80px;
+      @include media('>=sm'){
+        width: 111px;
+      }
+      @include media('>=lg'){
+        margin-top: 52px;
+        font-size: 24px;
+        letter-spacing: 0.025em;
+        line-height: 30px;
+      }
+
+      &::before{
+        content:'';
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        left: 0;
+        top: -16px;
+        background: $border;
+        @include media('>=sm'){
+          width: 111px;
+        }
+      }
+
+      &::after{
+        content:'';
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        bottom: -14px;
+        left: 0;
+        background: $border;
+        @include media('>=sm'){
+          width: 111px;
+        }
+      }
+    }
+
+    blockquote{
+      margin: 0 auto;
+      font-family: $scriptina;
+      font-weight: normal;
+      color: $barley-corn;
+      border: none;
+      position: relative;
+      width: 280px;
+      @include media('>=lg'){
+        margin-top: 28px;
+      }
+
+      &::before{
+        content:'';
+        display: inline-block;
+        position: absolute;
+        background: url('/images/icons/quote.png') top center;
+        width:23px;
+        height: 14px;
+        top: 0;
+        left: 0;
+        @include media('>=sm'){
+          top: -4px;
+          left: -63px;
+        }
+      }
+
+      &::after{
+        content:'';
+        display: inline-block;
+        position: absolute;
+        background: url('/images/icons/quote.png') top center;
+        width:23px;
+        height: 14px;
+        bottom: -14px;
+        right: 0;
+        transform: rotateY(180deg);
+        @include media('>=sm'){
+          right: -63px;
+          bottom: -11px;
+        }
+      }
+
+      @include media('>=lg'){
+        font-size: 24px;
+        letter-spacing: 0.025em;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .cakes{
+    margin: 0 auto;
+    position: relative;
+    @include media('>=lg'){
+      padding: 0;
+    }
+
+    .good{
+      position: absolute;
+      top: 48px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto auto;
+      width: 276px;
+      height: 279px;
+      background: url('/images/icons/circle.png') top center;
+
+      span{
+        position: absolute;
+        font-size: 30px;
+        font-family: $alegreya;
+        font-weight: normal;
+        color:$laser;
+        letter-spacing: 0.05em;
+        line-height: 36px;
+        top: 88px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        @include media('>=lg'){
+          font-size: 30px;
+        }
+      }
+    }
+
+    .images{
+      margin: 0 auto;
+      margin-top: 18px;
+
+      .img{
+        max-width: 100%;
+        display:block;
+        height: auto;
+        float: left;
+        margin-left: 11px;
+        margin-right: 8px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        @include media('>=sm','<=md'){
+          margin-left: 43px;
+        }
+        @include media('>=md','<=lg'){
+          max-width: 45%;
+          display:block;
+          height: auto;
+        }
+      }
+    }
+  }
+}

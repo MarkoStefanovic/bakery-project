@@ -1,0 +1,22 @@
+// COMPONENT2
+
+.component2{
+  background: $white;
+  padding-bottom: 50px;
+  @include media('<sm'){
+    text-align: center;
+  }
+  @include media('>=sm'){
+    background: url('/images/images/pancakes-background.jpg') top center;
+    background-size: cover;
+  }
+  @include media('>=lg'){
+    padding: 140px 0 108px 0;
+  }
+
+  .row{
+    @include media('>=lg'){
+      padding-left: 80px;
+    }
+  }
+}

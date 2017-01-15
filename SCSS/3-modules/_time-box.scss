@@ -1,0 +1,50 @@
+.time-box{
+  display: block;
+  position: relative;
+  background: url('/images/icons/small-box-bg.jpg') top center;
+  width: 200px;
+  height: 200px;
+  font-family: $alegreya;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  text-align: center;
+  box-shadow: 0px 25px 54px 0px rgba(105, 80, 58, 0.45);
+
+  p.first{
+    font-family: $alegreya;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 28px;
+    color: $barley-corn;
+  }
+  p.number{
+    font-family: $alegreya;
+    font-size: 92px;
+    color: $calico;
+    font-weight: bold;
+    margin-top: 33px;
+  }
+  p.min{
+    font-family: $alegreya;
+    font-size:18px;
+    color: $natural-gray;
+    margin-top: 24px;
+
+  }
+  &.transparent{
+  background: rgba(255,255,255,0.7);
+  //padding-top: 11px;
+  .first{
+    margin-top: 40px;
+  }
+  .number{
+    color: $fuscous-gray;
+    font-size: 60px;
+    margin-top: 15px;
+  }
+  .min{
+    margin-top: 15px;
+  }
+  }
+}

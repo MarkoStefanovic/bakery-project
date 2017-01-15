@@ -1,0 +1,268 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bakery Website</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400,700%7cDroid+Sans%7cPlayfair+Display:700%7cMontserrat">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand" href="#">Gustoso</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#">welcome</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">reservations</a></li>
+            <li><a href="#">news</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <!-- END/NAVIGATION -->
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="h1">Pastry with love</h1>
+        <p>We`re bringing you fresh ingredients every day in ways you can`t resist.</p>
+        <a href="" class="btn btn-default">our menu</a>
+      </div>
+    </div>
+    <!-- END/JUMBOTRON -->
+  </header>
+  <main>
+    <!-- COMPONENT1 -->
+    <div class="component1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Art of cakes</h2>
+            <span class="underheading">we create delicious memories</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor.</p>
+            <h3>Chef Cook</h3>
+            <div class="name">
+              <span>Benito</span>
+              <img src="/bakery-website/images/images/chef.png" alt="chef cook">
+              <span>Gaspare</span>
+              <div class="clearfix"></div>
+              <blockquote>
+                Unique creations for unique occasions.
+              </blockquote>
+            </div>
+          </div>
+          <div class="hidden-xs col-md-6 cakes">
+            <div class="good"><span>Tastes so <br/>good!</span></div>
+            <div class="images">
+              <img src="/bakery-website/images/images/cake1.jpg" alt="" class="img">
+              <img src="/bakery-website/images/images/cake2.jpg" alt="" class="img">
+              <div class="clearfix"></div>
+              <img src="/bakery-website/images/images/cake3.jpg" alt="" class="img">
+              <img src="/bakery-website/images/images/cake4.jpg" alt="" class="img">
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END/COMPONENT1 -->
+    <!-- COMPONENT2 -->
+    <div class="component2">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="food-widget" id="food-widget">
+              <div class="left">
+                <picture id="food-widget-picture">
+                  <source media="screen and (min-width: 992px)" srcset="/bakery-website/images/images/food-widget.png">
+                  <source media="screen and (min-width: 320px)" srcset="/bakery-website/images/images/pancakes-419.jpg">
+                  <img src="/bakery-website/images/images/food-widget.png" alt="">
+                </picture>
+                <div class="hidden-md rating white" id="star-rating">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="empty-star"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="right">
+                <h2>Tasty pancakes</h2>
+                <span class="underheading">season favourite</span>
+                <p class="widget-text" id="food-widget-text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+                <div class="time-box">
+                  <p class="first">Ready in</p>
+                  <p class="number" id="food-widget-minutes">40</p>
+                  <p class="min">mins</p>
+                </div>
+                <div class="rating gold" id="gold-star-rating">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="empty-star"></div>
+                </div>
+                <div class="hidden-xs controls ">
+                  <div class="left-arrow"><i class="fa fa-chevron-left "></i></div>
+                  <div class="preview">
+                    <img id="slide1" class="current" src="/bakery-website/images/images/slideshow1.png" alt="">
+                    <img id="slide2" src="/bakery-website/images/images/slideshow2.png" alt="">
+                    <img id="slide3" src="/bakery-website/images/images/slideshow3.png" alt="">
+                  </div>
+                  <div class="right-arrow"><i class="fa fa-chevron-right "></i></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END/COMPONENT2 -->
+    <!-- COMPONENT3 -->
+    <div class="component3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 left">
+            <h2>Breakfast</h2>
+            <span class="underheading">7am breakfast? we`re open!</span>
+            <div class="breakfast-item first">
+              <h3>Full breakfast</h3>
+              <p>Duis ut tortor, et risus, vulpulate pretium.</p>
+              <span class="price">$12.49</span>
+            </div>
+            <div class="breakfast-item second">
+              <h3>Toast & Jam</h3>
+              <p>Duis ut tortor, et risus, vulpulate pretium.</p>
+              <span class="price">$4.90</span>
+            </div>
+            <div class="breakfast-item third">
+              <h3>Muffins</h3>
+              <p>Duis ut tortor, et risus, vulpulate pretium.</p>
+              <span class="price">$3.95</span>
+            </div>
+          </div>
+          <div class="col-md-6 right">
+            <div class="paper-block">
+              <div class="inner-block">
+                <span class="logo-text">EST.</span>
+                <span class="logo-text">1893</span>
+                <h2>Your Morning escape with Flair</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <a href="" class="btn btn-default">READ</a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END/COMPONENT3 -->
+    <!-- COMPONENT4 -->
+    <div class="component4">
+      <div class="container">
+        <div class="row">
+          <div class="head">
+            <h2>The Jibarito sandwich</h2>
+            <span class="underheading">the best sandwich you`ve ever tasted!</span>
+          </div>
+          <div class=" col-md-4 left">
+            <div class="block-list">
+              <img src="/bakery-website/images/icons/list1.png" alt="">
+              <h4>Class aptent</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div class="block-list">
+              <img src="/bakery-website/images/icons/list2.png" alt="">
+              <h4>Class aptent</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div class="block-list">
+              <img src="/bakery-website/images/icons/list3.png" alt="">
+              <h4>Class aptent</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+          </div>
+          <div class="col-md-8 right">
+            <img src="/bakery-website/images/images/sandwich.jpg" alt="">
+            <a href="" class="btn btn-white">full recipe</a>
+            <div class=" hidden-sm hidden-xs time-block">
+              <div class="time-box transparent">
+                <p class="first">prep</p>
+                <p class="number">15</p>
+                <p class="min">mins</p>
+              </div>
+              <div class="time-box transparent">
+                <p class="first">cook</p>
+                <p class="number">35</p>
+                <p class="min">mins</p>
+              </div>
+              <div class="time-box">
+                <p class="first">ready in</p>
+                <p class="number">50</p>
+                <p class="min">mins</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END/COMPONENT4 -->
+  </main>
+  <footer class="footer">
+    <div class="continer">
+      <div class="row">
+        <div class="col-sm-12 ">
+          <div class="footer-block center-block">
+            <ul class="list-unstyled footer-nav">
+              <li><a href="#">our menu</a></li>
+              <li class="sign"><a href="#">gallery</a></li>
+              <li class="sign"><a href="#">culture</a></li>
+              <li class="brand">Gustoso</li>
+              <li><a href="#">events</a></li>
+              <li class="sign"><a href="#">catering</a></li>
+              <li class="sign"><a href="#">visit us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

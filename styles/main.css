@@ -1,0 +1,1442 @@
+
+@font-face {
+  font-family: 'scriptinaregular';
+  src: url("/bakery-website/fonts/scriptina-webfont.eot");
+  src: url("/bakery-website/fonts/scriptina-webfont.eot?#iefix") format("embedded-opentype"), url("/bakery-website/fonts/scriptina-webfont.woff") format("woff"), url("/bakery-website/fonts/scriptina-webfont.ttf") format("truetype"), url("/bakery-website/fonts/scriptina-webfont.svg#scriptinaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, .jumbotron .h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  color: #FFFFFF;
+}
+
+@media (min-width: 1260px) {
+  h1, .jumbotron .h1 {
+    font-size: 92px;
+    line-height: 24px;
+  }
+}
+
+h2 {
+  font-family: "Alegreya", serif;
+  font-weight: bold;
+  color: #56534C;
+  letter-spacing: 0.22em;
+}
+
+@media (min-width: 1260px) {
+  h2 {
+    font-size: 48px;
+    letter-spacing: 0.025em;
+    line-height: 24px;
+  }
+}
+
+h3 {
+  font-family: "Alegreya", serif;
+  font-weight: bold;
+  color: #56534C;
+}
+
+@media (min-width: 1260px) {
+  h3 {
+    font-size: 24px;
+    letter-spacing: 0.025em;
+    line-height: 30px;
+  }
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  color: #56534C;
+}
+
+.underheading {
+  font-family: "Alegreya", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #A47D5E;
+}
+
+@media (min-width: 1260px) {
+  .underheading {
+    letter-spacing: 0.09em;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+a.btn {
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 12px 46px;
+  border-radius: 0;
+}
+
+a.btn.btn-default {
+  color: #FFFFFF;
+  background: rgba(86, 83, 76, 0.53);
+  border: 1px dashed #9E9C93;
+}
+
+a.btn.btn-default:hover, a.btn.btn-default:focus {
+  background: rgba(164, 160, 151, 0.53);
+}
+
+a.btn.btn-default:active {
+  background: rgba(187, 185, 179, 0.53);
+  color: rgba(86, 83, 76, 0.53);
+}
+
+a.btn.btn-white {
+  padding: 14px 28px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  background: #FFFFFF;
+  color: #DFC691;
+  border: 1px dashed #DFC691;
+}
+
+a.btn.btn-white:hover, a.btn.btn-white:focus {
+  background: #a4a097;
+  color: #FFFFFF;
+  border: 1px dashed #56534C;
+}
+
+a.btn.btn-white:active {
+  background: #bbb9b3;
+  color: #FFFFFF;
+  border: 1px dashed #56534C;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar.navbar-inverse {
+  border-radius: 0;
+  border: none;
+  background: #bb9c51;
+}
+
+@media (min-width: 768px) {
+  .navbar.navbar-inverse {
+    background: rgba(86, 83, 76, 0.53);
+  }
+}
+
+.navbar.navbar-inverse .navbar-brand {
+  font-family: "scriptinaregular", serif;
+  font-size: 30px;
+  letter-spacing: 0.3em;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 1260px) {
+  .navbar.navbar-inverse .navbar-brand {
+    margin: 2px 0 0 -45px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .navbar.navbar-inverse .navbar-brand {
+    margin: 2px 0 0 -30px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .navbar ul {
+    margin-left: 14px;
+  }
+}
+
+.navbar .navbar-nav li a {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .navbar .navbar-nav li a {
+    padding: 23px 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1259px) {
+  .navbar .navbar-nav li a {
+    font-size: 12px;
+  }
+}
+
+.navbar .navbar-nav li a:focus, .navbar .navbar-nav li a:hover {
+  color: #bbb9b3;
+}
+
+@media (min-width: 1260px) {
+  .navbar .navbar-left li {
+    margin-left: 70px;
+  }
+  .navbar .navbar-left li:nth-child(3) {
+    margin-left: 66px;
+  }
+  .navbar .navbar-left li:nth-child(n+2)::after {
+    content: '~';
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    color: #FFFFFF;
+    left: -48px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .navbar .navbar-right {
+    margin-right: -43px;
+  }
+  .navbar .navbar-right li {
+    margin-right: 7px;
+  }
+}
+
+.navbar .navbar-toggle {
+  overflow: hidden;
+  border: none;
+}
+
+.navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {
+  border: none;
+  background: transparent;
+}
+
+.navbar .navbar-toggle .icon-bar {
+  background: #FFFFFF;
+  -webkit-transition: opacity, -webkit-transform;
+  transition: opacity, -webkit-transform;
+  transition: opacity, transform;
+  transition: opacity, transform, -webkit-transform;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+          transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+}
+
+.navbar .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  -webkit-transform: translateY(6px) rotate(765deg);
+          transform: translateY(6px) rotate(765deg);
+}
+
+.navbar .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.navbar .navbar-toggle:not(.collapsed) .icon-bar:nth-child(4) {
+  -webkit-transform: translateY(-6px) rotate(-765deg);
+          transform: translateY(-6px) rotate(-765deg);
+}
+
+.jumbotron {
+  text-align: center;
+  background: url("/bakery-website/images/images/jumbotron-background.jpg") top center;
+  background-size: cover;
+  margin: 0;
+  padding: 60px 0;
+}
+
+@media (min-width: 1260px) {
+  .jumbotron {
+    min-height: 900px;
+  }
+}
+
+.jumbotron .h1 {
+  margin-top: 30px;
+  position: relative;
+}
+
+@media (min-width: 1260px) {
+  .jumbotron .h1 {
+    margin-top: 247px;
+  }
+  .jumbotron .h1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 124px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 190px;
+    height: 12px;
+    background: url("/bakery-website/images/icons/dashed-line.png") top center;
+  }
+}
+
+.jumbotron p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .jumbotron p {
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .jumbotron p {
+    margin: 142px 325px 65px 325px;
+  }
+}
+
+.component1 {
+  text-align: center;
+  margin-top: 10px;
+  background: #FFFFFF;
+  padding-bottom: 1px;
+}
+
+@media (min-width: 768px) {
+  .component1 {
+    background: url("/bakery-website/images/images/artofcakes.jpg") top center;
+    background-size: cover;
+  }
+}
+
+.component1::before {
+  content: '';
+  background: url("/bakery-website/images/icons/border.png") top center;
+  display: block;
+  position: relative;
+  width: 106px;
+  height: 106px;
+  margin: 0 auto;
+  top: -59px;
+}
+
+.component1 .container {
+  margin-top: -24px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1260px) {
+  .component1 .container {
+    margin-bottom: 110px;
+  }
+}
+
+.component1 h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 768px) {
+  .component1 h2 {
+    margin-top: 20px;
+  }
+}
+
+.component1 h3 {
+  margin-top: 34px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1260px) {
+  .component1 h3 {
+    margin-bottom: 0;
+  }
+}
+
+.component1 p {
+  margin-top: 30px;
+}
+
+@media (min-width: 1260px) {
+  .component1 p {
+    margin-top: 52px;
+    line-height: 24px;
+    padding: 0 45px;
+  }
+}
+
+.component1 .name {
+  margin: 0 auto;
+  width: 260px;
+}
+
+@media (min-width: 768px) {
+  .component1 .name {
+    width: 372px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .component1 .name {
+    margin-top: 28px;
+  }
+}
+
+.component1 .name img {
+  float: left;
+  margin: -36px 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .component1 .name img {
+    margin: 15px 25px 0 25px;
+  }
+}
+
+.component1 .name span {
+  text-align: center;
+  font-family: "Alegreya", serif;
+  font-weight: normal;
+  position: relative;
+  float: left;
+  color: #A47D5E;
+  text-transform: capitalize;
+  width: 80px;
+}
+
+@media (min-width: 768px) {
+  .component1 .name span {
+    width: 111px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .component1 .name span {
+    margin-top: 52px;
+    font-size: 24px;
+    letter-spacing: 0.025em;
+    line-height: 30px;
+  }
+}
+
+.component1 .name span::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  left: 0;
+  top: -16px;
+  background: #d7d5ca;
+}
+
+@media (min-width: 768px) {
+  .component1 .name span::before {
+    width: 111px;
+  }
+}
+
+.component1 .name span::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  bottom: -14px;
+  left: 0;
+  background: #d7d5ca;
+}
+
+@media (min-width: 768px) {
+  .component1 .name span::after {
+    width: 111px;
+  }
+}
+
+.component1 .name blockquote {
+  margin: 0 auto;
+  font-family: "scriptinaregular", serif;
+  font-weight: normal;
+  color: #A47D5E;
+  border: none;
+  position: relative;
+  width: 280px;
+}
+
+@media (min-width: 1260px) {
+  .component1 .name blockquote {
+    margin-top: 28px;
+  }
+}
+
+.component1 .name blockquote::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background: url("/bakery-website/images/icons/quote.png") top center;
+  width: 23px;
+  height: 14px;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .component1 .name blockquote::before {
+    top: -4px;
+    left: -63px;
+  }
+}
+
+.component1 .name blockquote::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background: url("/bakery-website/images/icons/quote.png") top center;
+  width: 23px;
+  height: 14px;
+  bottom: -14px;
+  right: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+  .component1 .name blockquote::after {
+    right: -63px;
+    bottom: -11px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .component1 .name blockquote {
+    font-size: 24px;
+    letter-spacing: 0.025em;
+    line-height: 30px;
+  }
+}
+
+.component1 .cakes {
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 1260px) {
+  .component1 .cakes {
+    padding: 0;
+  }
+}
+
+.component1 .cakes .good {
+  position: absolute;
+  top: 48px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto auto;
+  width: 276px;
+  height: 279px;
+  background: url("/bakery-website/images/icons/circle.png") top center;
+}
+
+.component1 .cakes .good span {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Alegreya", serif;
+  font-weight: normal;
+  color: #C9B176;
+  letter-spacing: 0.05em;
+  line-height: 36px;
+  top: 88px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1260px) {
+  .component1 .cakes .good span {
+    font-size: 30px;
+  }
+}
+
+.component1 .cakes .images {
+  margin: 0 auto;
+  margin-top: 18px;
+}
+
+.component1 .cakes .images .img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  float: left;
+  margin-left: 11px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .component1 .cakes .images .img {
+    margin-left: 43px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1260px) {
+  .component1 .cakes .images .img {
+    max-width: 45%;
+    display: block;
+    height: auto;
+  }
+}
+
+.component2 {
+  background: #FFFFFF;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .component2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .component2 {
+    background: url("/bakery-website/images/images/pancakes-background.jpg") top center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1260px) {
+  .component2 {
+    padding: 140px 0 108px 0;
+  }
+}
+
+@media (min-width: 1260px) {
+  .component2 .row {
+    padding-left: 80px;
+  }
+}
+
+.component3 {
+  background: #383b4a;
+  padding: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .component3 {
+    background: url("/bakery-website/images/images/breakfast-background.jpg") top center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1260px) {
+  .component3 {
+    padding: 80px 0;
+  }
+}
+
+.component3 .left {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  .component3 .left {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1260px) {
+  .component3 .left {
+    padding-left: 102px;
+  }
+}
+
+.component3 .left h2 {
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .component3 .left h2 {
+    font-size: 60px;
+  }
+}
+
+.component3 .left .underheading {
+  letter-spacing: 0.2em;
+}
+
+.component3 .left .breakfast-item {
+  position: relative;
+}
+
+.component3 .left .breakfast-item.first {
+  margin-top: 60px;
+}
+
+.component3 .left .breakfast-item.second {
+  margin-top: 48px;
+}
+
+.component3 .left .breakfast-item.third {
+  margin-top: 54px;
+}
+
+.component3 .left .breakfast-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -36px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 90px;
+  height: 27px;
+  background: url("/bakery-website/images/icons/list.png") top center;
+}
+
+.component3 .left .breakfast-item h3 {
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+  .component3 .left .breakfast-item h3 {
+    font-size: 30px;
+  }
+}
+
+.component3 .left .breakfast-item p {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.component3 .left .breakfast-item span {
+  font-family: "Alegreya", serif;
+  font-weight: normal;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: #DFC691;
+}
+
+@media (min-width: 1260px) {
+  .component3 .right {
+    padding-right: 0;
+  }
+}
+
+.component3 .right .paper-block {
+  background: #F3F1E9;
+  padding: 10px;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .component3 .right .paper-block {
+    width: 439px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .component3 .right .paper-block {
+    margin: 0;
+    float: right;
+  }
+}
+
+.component3 .right .paper-block .inner-block {
+  text-align: center;
+  background: #F3F1E9;
+  border: 1px dashed #9E9C93;
+  padding: 60px 10px 10px 10px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .component3 .right .paper-block .inner-block {
+    height: 580px;
+    padding: 169px 10px 10px 10px;
+  }
+}
+
+.component3 .right .paper-block .inner-block:before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: url("/bakery-website/images/icons/menu-head-logo.png") top center no-repeat;
+  width: 60px;
+  height: 60px;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .component3 .right .paper-block .inner-block:before {
+    width: 367px;
+    top: 67px;
+    background: url("/bakery-website/images/icons/block-logo.png");
+  }
+}
+
+.component3 .right .paper-block .inner-block .logo-text {
+  position: absolute;
+  font-family: "Alegreya", serif;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: #56534C;
+}
+
+.component3 .right .paper-block .inner-block .logo-text:nth-child(1) {
+  top: 10px;
+  left: 35px;
+}
+
+@media (min-width: 768px) {
+  .component3 .right .paper-block .inner-block .logo-text:nth-child(1) {
+    top: 32px;
+    left: 95px;
+  }
+}
+
+.component3 .right .paper-block .inner-block .logo-text:nth-child(2) {
+  top: 10px;
+  right: 32px;
+}
+
+@media (min-width: 768px) {
+  .component3 .right .paper-block .inner-block .logo-text:nth-child(2) {
+    top: 32px;
+    right: 92px;
+  }
+}
+
+.component3 .right .paper-block .inner-block h2 {
+  color: #56534C;
+}
+
+@media (min-width: 768px) {
+  .component3 .right .paper-block .inner-block h2 {
+    font-size: 44px;
+    letter-spacing: 0.025em;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .component3 .right .paper-block .inner-block p {
+    margin-top: 29px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.component3 .right .paper-block .inner-block .btn.btn-default {
+  width: 190px;
+  font-size: 18px;
+  margin: 20px auto 0 auto;
+  border: 1px solid #56534C;
+  background: transparent;
+  color: #A47D5E;
+}
+
+@media (min-width: 768px) {
+  .component3 .right .paper-block .inner-block .btn.btn-default {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+    left: 0;
+  }
+}
+
+.component4 {
+  padding-top: 50px;
+  background: #F3F1E9;
+}
+
+@media (min-width: 768px) {
+  .component4 {
+    padding-top: 87px;
+  }
+}
+
+.component4 .head {
+  text-align: center;
+  position: relative;
+}
+
+.component4 .head h2 {
+  margin-bottom: 14px;
+}
+
+.component4 .head::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -74px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url("/bakery-website/images/icons/sandwich-logo.png") top center;
+  opacity: 0.5;
+  width: 320px;
+  height: 142px;
+}
+
+@media (min-width: 768px) {
+  .component4 .head::after {
+    width: 707px;
+    top: -107px;
+  }
+}
+
+.component4 .left {
+  padding-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .component4 .left {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .component4 .left {
+    margin-left: -65px;
+    margin-top: -13px;
+  }
+}
+
+.component4 .left .block-list {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .component4 .left .block-list {
+    margin-bottom: 55px;
+  }
+}
+
+.component4 .left .block-list h4 {
+  font-family: "Alegreya", serif;
+  font-weight: bold;
+  color: #A47D5E;
+}
+
+@media (min-width: 768px) {
+  .component4 .left .block-list h4 {
+    margin: 21px 0 20px 0;
+    font-size: 30px;
+    letter-spacing: 0.025em;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .component4 .left .block-list p {
+    line-height: 20px;
+    padding: 0 20px;
+  }
+}
+
+.component4 .right {
+  position: relative;
+}
+
+.component4 .right img {
+  max-width: 80%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border: 10px #FFFFFF solid;
+  box-shadow: 0px 10px 10px 0px rgba(105, 80, 58, 0.2);
+}
+
+@media (min-width: 992px) {
+  .component4 .right img {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .component4 .right img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .component4 .right img {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .component4 .right img {
+    margin-left: 50px;
+  }
+}
+
+.component4 .right .btn.btn-white {
+  margin: -46px 0 0 26px;
+}
+
+.component4 .right .time-block {
+  position: absolute;
+  top: 57px;
+  right: -55px;
+}
+
+.component4 .right .time-block .time-box.transparent {
+  margin-top: 0;
+}
+
+.component4 .right .time-block .time-box {
+  padding-top: 1px;
+}
+
+.component4 .right .time-block .time-box:nth-child(1) {
+  margin-bottom: 1px;
+}
+
+.footer {
+  padding-top: 58px;
+  background: #F3F1E9;
+  text-align: center;
+}
+
+.footer .footer-block .brand {
+  font-family: "scriptinaregular", serif;
+  font-size: 30px;
+  letter-spacing: 0.3em;
+  line-height: 24px;
+  color: #56534C;
+}
+
+@media (min-width: 992px) {
+  .footer .footer-block .brand {
+    margin: 24px 50px 0;
+  }
+}
+
+@media (min-width: 1260px) {
+  .footer .footer-block .brand {
+    margin-left: 45px;
+  }
+}
+
+.footer .footer-block .footer-nav {
+  border-top: 1px solid #c2beba;
+  border-bottom: 1px solid #c2beba;
+}
+
+.footer .footer-block .footer-nav li {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .footer .footer-block .footer-nav li {
+    display: inline;
+    margin-left: 30px;
+  }
+  .footer .footer-block .footer-nav li:nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1260px) {
+  .footer .footer-block .footer-nav li {
+    margin-left: 78px;
+  }
+  .footer .footer-block .footer-nav li:nth-child(3) {
+    margin-right: 35px;
+  }
+  .footer .footer-block .footer-nav li:nth-child(1) {
+    margin-left: 0;
+  }
+  .footer .footer-block .footer-nav li.sign::after {
+    content: '~';
+    display: block;
+    position: absolute;
+    top: 0;
+    color: #56534C;
+    left: -48px;
+  }
+}
+
+.footer .footer-block .footer-nav li a {
+  display: inline-block;
+  font-family: "Alegreya", serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  line-height: 24px;
+  color: #56534C;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  .footer .footer-block .footer-nav li a {
+    letter-spacing: 0.01em;
+  }
+}
+
+.footer .footer-block .footer-nav li a:focus, .footer .footer-block .footer-nav li a:hover {
+  color: #DFC691;
+}
+
+.footer .footer-block .footer-nav li a:active {
+  color: #FFFFFF;
+}
+
+.rating.white {
+  display: block;
+  width: 21px;
+  height: 140px;
+}
+
+.rating.white .star {
+  width: 21px;
+  height: 20px;
+  background: url("/bakery-website/images/icons/white-star.png") top center;
+  margin-bottom: 10px;
+}
+
+.rating.white .empty-star {
+  width: 21px;
+  height: 20px;
+  margin-bottom: 10px;
+  background: url("/bakery-website/images/icons/empty-white-star.png") top center;
+}
+
+.rating.gold {
+  display: block;
+  width: 120px;
+  height: 16px;
+}
+
+.rating.gold .star {
+  display: block;
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  background: url("/bakery-website/images/icons/gold-star.png") top center;
+}
+
+.rating.gold .empty-star {
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  background: url("/bakery-website/images/icons/black-star.png") top center;
+}
+
+.time-box {
+  display: block;
+  position: relative;
+  background: url("/bakery-website/images/icons/small-box-bg.jpg") top center;
+  width: 200px;
+  height: 200px;
+  font-family: "Alegreya", serif;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  text-align: center;
+  box-shadow: 0px 25px 54px 0px rgba(105, 80, 58, 0.45);
+}
+
+.time-box p.first {
+  font-family: "Alegreya", serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 28px;
+  color: #A47D5E;
+}
+
+.time-box p.number {
+  font-family: "Alegreya", serif;
+  font-size: 92px;
+  color: #DFC691;
+  font-weight: bold;
+  margin-top: 33px;
+}
+
+.time-box p.min {
+  font-family: "Alegreya", serif;
+  font-size: 18px;
+  color: #979285;
+  margin-top: 24px;
+}
+
+.time-box.transparent {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.time-box.transparent .first {
+  margin-top: 40px;
+}
+
+.time-box.transparent .number {
+  color: #56534C;
+  font-size: 60px;
+  margin-top: 15px;
+}
+
+.time-box.transparent .min {
+  margin-top: 15px;
+}
+
+.food-widget {
+  position: relative;
+  padding-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .food-widget {
+    width: 965px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .food-widget {
+    padding-top: 0;
+    box-shadow: 0px 25px 54px 0px rgba(105, 80, 58, 0.45);
+  }
+}
+
+@media (max-width: 767px) {
+  .food-widget .rating.white {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .food-widget .rating.white {
+    position: absolute;
+    display: block;
+    top: 186px;
+    left: 30px;
+  }
+}
+
+.food-widget .rating.gold {
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .food-widget .rating.gold {
+    top: 10px;
+    left: 50%;
+    margin-left: -60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .food-widget .rating.gold {
+    left: 20px;
+    bottom: 175px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .food-widget .rating.gold {
+    left: 63px;
+  }
+}
+
+.food-widget .left {
+  height: 143px;
+  background: #FFFFFF;
+}
+
+@media (min-width: 992px) {
+  .food-widget .left {
+    width: 419px;
+    background: transparent;
+  }
+}
+
+.food-widget .left img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .food-widget .left img {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .food-widget .left img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .food-widget .left {
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .food-widget .right {
+    float: right;
+  }
+}
+
+.food-widget .right {
+  padding: 10px 10px 0 10px;
+  position: relative;
+  background: #FFFFFF url("/bakery-website/images/icons/windmill.png") bottom right no-repeat;
+}
+
+@media (min-width: 768px) {
+  .food-widget .right {
+    height: 400px;
+    padding: 10px 20px 0 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .food-widget .right {
+    width: 546px;
+    height: 512px;
+    padding-top: 67px;
+    width: 546px;
+    box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 1260px) {
+  .food-widget .right {
+    padding-right: 57px;
+    padding-left: 63px;
+  }
+}
+
+.food-widget .right h2 {
+  margin-bottom: 14px;
+}
+
+.food-widget .right .widget-text {
+  font-weight: normal;
+  margin-top: 53px;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .food-widget .right .time-box {
+    position: absolute;
+    top: -143px;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .food-widget .right .time-box {
+    top: 0;
+  }
+}
+
+@media (min-width: 1260px) {
+  .food-widget .right .time-box {
+    top: -43px;
+    right: -105px;
+  }
+}
+
+.food-widget .right .controls {
+  position: absolute;
+  bottom: 41px;
+  width: 423px;
+  height: 90px;
+  left: 50%;
+  margin-left: -210px;
+}
+
+.food-widget .right .controls .preview {
+  float: left;
+}
+
+.food-widget .right .controls .preview img {
+  margin-left: 15px;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.food-widget .right .controls .preview img.current {
+  opacity: 1;
+}
+
+.food-widget .right .controls .left-arrow, .food-widget .right .controls .right-arrow {
+  float: left;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 100%;
+  border: 2px #d8bba3 solid;
+}
+
+.food-widget .right .controls .left-arrow:hover, .food-widget .right .controls .left-arrow:focus, .food-widget .right .controls .right-arrow:hover, .food-widget .right .controls .right-arrow:focus {
+  color: #56534C;
+}
+
+.food-widget .right .controls .left-arrow:active, .food-widget .right .controls .right-arrow:active {
+  color: #DFC691;
+}
+
+.food-widget .right .controls .left-arrow .fa, .food-widget .right .controls .right-arrow .fa {
+  line-height: 28px;
+  padding-left: 9px;
+  color: #d8bba3;
+}
+
+.food-widget .right .controls .left-arrow .fa {
+  padding-left: 7px;
+}
+
+.food-widget .right .controls .right-arrow {
+  margin-left: 10px;
+}

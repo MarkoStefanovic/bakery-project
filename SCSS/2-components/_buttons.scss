@@ -1,0 +1,44 @@
+// BUTTONS
+
+a.btn{
+  font-family: $alegreya;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 12px 46px;
+  border-radius: 0;
+  &.btn-default{
+    color: $white;
+    background: $fuscous-grayRGBA;
+    border: 1px dashed $dawn;
+
+    &:hover,&:focus{
+      background: lighten($fuscous-grayRGBA, 30%);
+    }
+    &:active{
+      background: lighten($fuscous-grayRGBA, 40%);
+      color: $fuscous-grayRGBA;
+    }
+  }
+  &.btn-white{
+    padding: 14px 28px;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 30px;
+    background: $white;
+    color: $calico;
+    border: 1px dashed $calico;
+    &:hover,&:focus{
+      background: lighten($fuscous-gray, 30%);
+      color: $white;
+      border: 1px dashed $fuscous-gray;
+    }
+    &:active{
+      background: lighten($fuscous-gray, 40%);
+      color: $white;
+      border: 1px dashed $fuscous-gray;
+    }
+  }
+}

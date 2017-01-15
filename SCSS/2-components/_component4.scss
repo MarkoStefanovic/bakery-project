@@ -1,0 +1,117 @@
+// component4
+
+.component4{
+  padding-top: 50px;
+  background: $spring-wood;
+  @include media('>=sm'){
+    padding-top: 87px;
+  }
+
+  .head{
+    text-align: center;
+    position: relative;
+
+    h2{
+      margin-bottom: 14px;
+    }
+
+    &::after{
+      content:'';
+      position: absolute;
+      display: block;
+      top: -74px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background: url('/images/icons/sandwich-logo.png') top center;
+      opacity: 0.5;
+      width: 320px;
+      height: 142px;
+      @include media('>=sm'){
+        width: 707px;
+        top: -107px;
+      }
+    }
+  }
+
+  .left{
+    padding-top: 50px;
+    @include media('>=md'){
+      padding-top: 0;
+    }
+    @include media('>=xlg'){
+      margin-left: -65px;
+      margin-top: -13px;
+    }
+
+    .block-list{
+      text-align: center;
+      margin-bottom: 20px;
+      @include media('>=sm'){
+        margin-bottom: 55px;
+      }
+
+      h4{
+        font-family: $alegreya;
+        font-weight: bold;
+        color: $barley-corn;
+        @include media('>=sm'){
+          margin: 21px 0 20px 0;
+          font-size: 30px;
+          letter-spacing: 0.025em;
+          line-height: 30px;
+        }
+      }
+
+      p{
+        @include media('>=sm'){
+          line-height: 20px;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+
+  .right{
+    position: relative;
+    img{
+      max-width: 80%;
+      display:block;
+      height: auto;
+      margin: 0 auto;
+      @include media('>=md'){
+        margin: 0;
+      }
+      @include media('>=xlg'){
+        max-width: 100%;
+      }
+
+      border: 10px $white solid;
+      box-shadow: 0px 10px 10px 0px rgba(105, 80, 58, 0.2);
+      @include media('>=sm'){
+        margin-top: 80px;
+      }
+      @include media('>=xlg'){
+        margin-left: 50px;
+      }
+    }
+    .btn.btn-white{
+      margin: -46px 0 0 26px;
+    }
+    .time-block{
+      position: absolute;
+      top: 57px;
+      right: -55px;
+
+      .time-box.transparent{
+        margin-top: 0;
+      }
+      .time-box{
+        padding-top: 1px;
+        &:nth-child(1){
+          margin-bottom: 1px;
+        }
+      }
+    }
+  }
+}

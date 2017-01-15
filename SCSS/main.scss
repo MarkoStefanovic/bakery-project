@@ -1,0 +1,41 @@
+$icon-font-path: '../fonts/';
+
+
+/*
+Theme Name: Bakery
+Description: Main CSS
+Author: Marko Stefanovic
+Author URI: https://www.markostefanovic.github.io/
+Tags: Bakery, Website
+*/
+
+// 1 - TOOLS
+@import '1-base/vendors';
+@import '1-base/fonts';
+@import '1-base/vars';
+@import '1-base/typography';
+
+html, body { overflow-x: hidden; }
+
+// 2 - COMPONENTS
+@import '2-components/buttons';
+@import '2-components/navigation';
+@import '2-components/jumbotron';
+@import '2-components/component1';
+@import '2-components/component2';
+@import '2-components/component3';
+@import '2-components/component4';
+@import '2-components/footer';
+
+
+// 3 - MODULES
+@import '3-modules/rating';
+@import '3-modules/time-box';
+@import '3-modules/food-widget';
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}

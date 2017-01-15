@@ -1,0 +1,48 @@
+//JUMBOTRON
+
+.jumbotron {
+  text-align: center;
+  background: url('/images/images/jumbotron-background.jpg') top center;
+  background-size: cover;
+  margin: 0;
+  padding: 60px 0;
+  @include media ('>=lg') {
+    min-height: 900px;
+  }
+
+  .h1{
+    margin-top: 30px;
+    position: relative;
+    @include media('>=lg'){
+      margin-top: 247px;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 124px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 190px;
+        height: 12px;
+        background: url('/images/icons/dashed-line.png') top center;
+      }
+    }
+  }
+
+  p{
+    font-family: $montserrat;
+    font-weight: normal;
+    color: $white;
+    @include media('>=sm'){
+      font-size: 24px;
+      letter-spacing: 0.01em;
+      line-height: 36px;
+      margin-bottom: 50px;
+    }
+    @include media('>=lg'){
+      margin:142px 325px 65px 325px;
+    }
+  }
+}

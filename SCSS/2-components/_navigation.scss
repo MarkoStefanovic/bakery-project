@@ -1,0 +1,119 @@
+// NAVIGATION
+
+.navbar {
+  margin-bottom: 0;
+  &.navbar-inverse {
+    border-radius: 0;
+    border: none;
+    background: darken($laser, 10%);
+    @include media ('>=sm'){
+      background: $fuscous-grayRGBA;
+    }
+
+    .navbar-brand {
+      font-family: $scriptina;
+      font-size: 30px;
+      letter-spacing: 0.3em;
+      line-height: 24px;
+      color: $white;
+      @include media('>=lg'){
+        margin: 2px 0 0 -45px;
+      }
+      @include media('>=xlg'){
+        margin: 2px 0 0 -30px;
+      }
+    }
+  }
+
+  ul{
+    @include media('>=lg'){
+      margin-left: 14px;
+    }
+  }
+
+  .navbar-nav li a {
+    font-family: $droid;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    line-height: 24px;
+    color: $white;
+
+    @include media('>=sm'){
+      padding: 23px 0;
+      padding-left: 0;
+    }
+    @include media('>=sm','<lg'){
+      font-size: 12px;
+    }
+    &:focus,
+    &:hover {
+      color: lighten($fuscous-gray, 40%);
+    }
+  }
+
+  .navbar-left li {
+    @include media('>=lg'){
+      margin-left:70px;
+      &:nth-child(3){
+        margin-left:66px;
+      }
+      &:nth-child(n+2){
+        &::after {
+          content: '~';
+          display: inline-block;
+          position: absolute;
+          top: 25px;
+          color: $white;
+          left: -48px;
+        }
+      }
+    }
+  }
+
+  .navbar-right{
+    @include media('>=xlg'){
+      margin-right: -43px;
+      li{
+        margin-right: 7px;
+      }
+    }
+  }
+
+
+  .navbar-toggle {
+    overflow: hidden;
+    border: none;
+
+    &:focus,
+    &:hover {
+      border: none;
+      background: transparent;
+    }
+
+    .icon-bar {
+      background: $white;
+      // animation https://codepen.io/devatrox/pen/qENaMO
+      transition: opacity, transform;
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+    }
+
+    &:not(.collapsed) {
+      .icon-bar {
+        &:nth-child(2) {
+          transform: translateY(6px) rotate(765deg);
+        }
+
+        &:nth-child(3) {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+
+        &:nth-child(4) {
+          transform: translateY(-6px) rotate(-765deg);
+        }
+      }
+    }
+  }
+}

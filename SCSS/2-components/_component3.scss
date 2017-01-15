@@ -1,0 +1,204 @@
+// component3
+
+.component3 {
+  background: $bright-gray;
+  padding: 50px 0;
+
+  @include media ('>=sm') {
+    background: url('/images/images/breakfast-background.jpg') top center;
+    background-size: cover;
+  }
+
+  @include media ('>=lg') {
+    padding: 80px 0;
+  }
+
+  .left {
+    text-align: center;
+    padding-bottom: 50px;
+    @include media('>=md'){
+      padding-bottom:0;
+    }
+    @include media ('>=lg') {
+      padding-left: 102px;
+    }
+
+    h2 {
+      letter-spacing: 0.05em;
+      line-height: 30px;
+      color: $white;
+
+      @include media ('>=sm') {
+        font-size: 60px;
+      }
+    }
+
+    .underheading {
+      letter-spacing: 0.2em;
+    }
+
+    .breakfast-item {
+      &.first {
+        margin-top: 60px;
+      }
+
+      &.second {
+        margin-top: 48px;
+      }
+
+      &.third {
+        margin-top: 54px;
+      }
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -36px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 90px;
+        height: 27px;
+        background: url('/images/icons/list.png') top center;
+      }
+
+      h3 {
+        letter-spacing: 0.05em;
+        line-height: 30px;
+        color: $white;
+        margin-bottom: 4px;
+
+        @include media ('>=sm') {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        line-height: 30px;
+        color: $white;
+        margin-bottom: 16px;
+      }
+
+      span {
+        font-family: $alegreya;
+        font-weight: normal;
+        font-size: 36px;
+        letter-spacing: 0.05em;
+        line-height: 30px;
+        color: $calico;
+      }
+    }
+  }
+
+  .right {
+    @include media('>=lg'){
+      padding-right: 0;
+    }
+    .paper-block {
+      background: $spring-wood;
+      padding: 10px;
+      position: relative;
+      margin: 0 auto;
+      @include media('>=sm'){
+        width: 439px;
+
+      }
+      @include media('>=lg'){
+        margin: 0;
+        float: right;
+      }
+
+      .inner-block {
+        text-align: center;
+        background: $spring-wood;
+        border: 1px dashed $dawn;
+        padding:60px 10px 10px 10px ;
+        position: relative;
+        @include media('>=sm'){
+          height: 580px;
+          padding:169px 10px 10px 10px ;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          display: block;
+          background: url('/images/icons/menu-head-logo.png')top center no-repeat;
+          width: 60px;
+          height: 60px;
+          top: 20px;
+          left:0;
+          right:0;
+          margin: 0 auto;
+          @include media('>=sm'){
+            width: 367px;
+            top: 67px;
+            background: url('/images/icons/block-logo.png');
+          }
+        }
+
+        .logo-text{
+          position: absolute;
+          font-family: $alegreya;
+          font-weight: bold;
+          letter-spacing: 0.05em;
+          line-height: 30px;
+          color: $fuscous-gray
+        }
+
+        .logo-text:nth-child(1){
+          @include media('>=sm'){
+            top: 32px;
+            left: 95px;
+          }
+          top: 10px;
+          left: 35px;
+        }
+
+        .logo-text:nth-child(2){
+          @include media('>=sm'){
+            top: 32px;
+            right: 92px;
+          }
+          top: 10px;
+          right: 32px;
+        }
+
+        h2 {
+          color: $fuscous-gray;
+          @include media('>=sm'){
+            font-size: 44px;
+            letter-spacing: 0.025em;
+            line-height: 60px;
+          }
+        }
+
+        p{
+          @include media('>=sm'){
+            margin-top: 29px;
+            letter-spacing: 0.05em;
+          }
+        }
+
+        .btn.btn-default{
+          width: 190px;
+          font-size: 18px;
+          margin: 20px auto 0 auto;
+          border: 1px solid $fuscous-gray;
+          background: transparent;
+          color: $barley-corn;
+          @include media('>=sm'){
+            margin:0 auto;
+            position: absolute;
+            bottom: 55px;
+            right: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
